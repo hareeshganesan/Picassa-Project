@@ -37,9 +37,9 @@ public class RGBtoLuminanceExpression extends OperatorExpression
 
 
         @Override
-        public Expression parseExpression (Parser userInput)
+        public Expression parseExpression (Parser parser)
         {
-            return new RGBtoLuminanceExpression(parseOperands(userInput));
+            return new RGBtoLuminanceExpression(parseOperands(parser));
         }
     }
 }

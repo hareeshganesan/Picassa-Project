@@ -38,9 +38,9 @@ public class ClampExpression extends OperatorExpression
 
 
         @Override
-        public Expression parseExpression (Parser userInput)
+        public Expression parseExpression (Parser parser)
         {
-            return new ClampExpression(parseOperands(userInput));
+            return new ClampExpression(parseOperands(parser));
         }
     }
 }

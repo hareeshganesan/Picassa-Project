@@ -42,9 +42,9 @@ public class AddExpression extends OperatorExpression
 
 
         @Override
-        public Expression parseExpression (Parser userInput)
+        public Expression parseExpression (Parser parser)
         {
-            return new AddExpression(parseOperands(userInput));
+            return new AddExpression(parseOperands(parser));
         }
     }
 

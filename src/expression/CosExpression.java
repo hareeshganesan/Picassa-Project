@@ -37,9 +37,9 @@ public class CosExpression extends OperatorExpression
 
 
         @Override
-        public Expression parseExpression (Parser userInput)
+        public Expression parseExpression (Parser parser)
         {
-            return new CosExpression(parseOperands(userInput));
+            return new CosExpression(parseOperands(parser));
         }
     }
 

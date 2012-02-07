@@ -37,9 +37,9 @@ public class LogExpression extends OperatorExpression
 
 
         @Override
-        public Expression parseExpression (Parser userInput)
+        public Expression parseExpression (Parser parser)
         {
-            return new LogExpression(parseOperands(userInput));
+            return new LogExpression(parseOperands(parser));
         }
     }
 

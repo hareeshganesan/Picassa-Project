@@ -43,9 +43,9 @@ public class MultExpression extends OperatorExpression
 
 
         @Override
-        public Expression parseExpression (Parser userInput)
+        public Expression parseExpression (Parser parser)
         {
-            return new MultExpression(parseOperands(userInput));
+            return new MultExpression(parseOperands(parser));
         }
     }
 

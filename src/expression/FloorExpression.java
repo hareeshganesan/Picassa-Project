@@ -38,9 +38,9 @@ public class FloorExpression extends OperatorExpression
 
 
         @Override
-        public Expression parseExpression (Parser userInput)
+        public Expression parseExpression (Parser parser)
         {
-            return new FloorExpression(parseOperands(userInput));
+            return new FloorExpression(parseOperands(parser));
         }
     }
 

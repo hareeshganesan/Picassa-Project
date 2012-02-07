@@ -37,9 +37,9 @@ public class AbsoluteValueExpression extends OperatorExpression
 
 
         @Override
-        public Expression parseExpression (Parser userInput)
+        public Expression parseExpression (Parser parser)
         {
-            return new AbsoluteValueExpression(parseOperands(userInput));
+            return new AbsoluteValueExpression(parseOperands(parser));
         }
     }
 

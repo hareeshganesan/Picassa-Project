@@ -36,9 +36,9 @@ public class ConditionalExpression extends OperatorExpression
 
 
         @Override
-        public Expression parseExpression (Parser userInput)
+        public Expression parseExpression (Parser parser)
         {
-            return new ConditionalExpression(parseOperands(userInput));
+            return new ConditionalExpression(parseOperands(parser));
         }
     }
 

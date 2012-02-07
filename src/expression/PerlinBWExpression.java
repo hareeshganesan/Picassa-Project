@@ -37,9 +37,9 @@ public class PerlinBWExpression extends OperatorExpression
 
 
         @Override
-        public Expression parseExpression (Parser userInput)
+        public Expression parseExpression (Parser parser)
         {
-            return new PerlinBWExpression(parseOperands(userInput));
+            return new PerlinBWExpression(parseOperands(parser));
         }
     }
 

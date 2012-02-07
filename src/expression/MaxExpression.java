@@ -47,9 +47,9 @@ public class MaxExpression extends OperatorExpression
 
 
         @Override
-        public Expression parseExpression (Parser userInput)
+        public Expression parseExpression (Parser parser)
         {
-            return new MaxExpression(parseOperands(userInput));
+            return new MaxExpression(parseOperands(parser));
         }
     }
 

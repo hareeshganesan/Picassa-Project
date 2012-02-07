@@ -48,9 +48,9 @@ public class MinExpression extends OperatorExpression
 
 
         @Override
-        public Expression parseExpression (Parser userInput)
+        public Expression parseExpression (Parser parser)
         {
-            return new MinExpression(parseOperands(userInput));
+            return new MinExpression(parseOperands(parser));
         }
     }
 

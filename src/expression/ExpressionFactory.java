@@ -14,12 +14,12 @@ public abstract class ExpressionFactory
      * Identifies whether the inputted string at the passed in position index is
      * an instance of the associated expression.
      * 
-     * @param userInput TODO
+     * @param parser TODO
      * @return
      */
-    public boolean isInstance (Parser userInput)
+    public boolean isInstance (Parser parser)
     {
-        Matcher expMatcher = EXP_REGEX.matcher(userInput.currentSubstring());
+        Matcher expMatcher = EXP_REGEX.matcher(parser.currentSubstring());
         if (expMatcher.lookingAt()) return true;
         return false;
     }
@@ -29,9 +29,9 @@ public abstract class ExpressionFactory
      * Parses the expression specified in the input string starting at the
      * specified position
      * 
-     * @param userInput TODO
+     * @param parser TODO
      * @return
      */
-    public abstract Expression parseExpression (Parser userInput);
+    public abstract Expression parseExpression (Parser parser);
 
 }

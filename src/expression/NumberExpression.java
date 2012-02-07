@@ -44,9 +44,9 @@ public class NumberExpression extends Expression
 
 
         @Override
-        public Expression parseExpression (Parser userInput)
+        public Expression parseExpression (Parser parser)
         {
-            return new NumberExpression(matchValue(userInput));
+            return new NumberExpression(matchValue(parser));
         }
     }
 }

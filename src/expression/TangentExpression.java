@@ -44,9 +44,9 @@ public class TangentExpression extends OperatorExpression
 
 
         @Override
-        public Expression parseExpression (Parser userInput)
+        public Expression parseExpression (Parser parser)
         {
-            return new TangentExpression(parseOperands(userInput));
+            return new TangentExpression(parseOperands(parser));
         }
     }
 

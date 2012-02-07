@@ -43,9 +43,9 @@ public class SubtractExpression extends OperatorExpression
 
 
         @Override
-        public Expression parseExpression (Parser userInput)
+        public Expression parseExpression (Parser parser)
         {
-            return new SubtractExpression(parseOperands(userInput));
+            return new SubtractExpression(parseOperands(parser));
         }
     }
 

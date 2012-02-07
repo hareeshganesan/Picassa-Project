@@ -43,9 +43,9 @@ public class ModExpression extends OperatorExpression
 
 
         @Override
-        public Expression parseExpression (Parser userInput)
+        public Expression parseExpression (Parser parser)
         {
-            return new ModExpression(parseOperands(userInput));
+            return new ModExpression(parseOperands(parser));
         }
     }
 }

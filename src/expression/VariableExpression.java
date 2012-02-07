@@ -99,9 +99,9 @@ public class VariableExpression extends Expression
 
 
         @Override
-        public Expression parseExpression (Parser userInput)
+        public Expression parseExpression (Parser parser)
         {
-            String var = matchValue(userInput);
+            String var = matchValue(parser);
             if (varRegistry.containsKey(var)) return varRegistry.get(var);
             else
             {

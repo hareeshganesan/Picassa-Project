@@ -53,9 +53,9 @@ public class AverageExpression extends OperatorExpression
 
 
         @Override
-        public Expression parseExpression (Parser userInput)
+        public Expression parseExpression (Parser parser)
         {
-            return new AverageExpression(parseOperands(userInput));
+            return new AverageExpression(parseOperands(parser));
         }
     }
 

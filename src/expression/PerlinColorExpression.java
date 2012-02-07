@@ -37,9 +37,9 @@ public class PerlinColorExpression extends OperatorExpression
 
 
         @Override
-        public Expression parseExpression (Parser userInput)
+        public Expression parseExpression (Parser parser)
         {
-            return new PerlinColorExpression(parseOperands(userInput));
+            return new PerlinColorExpression(parseOperands(parser));
         }
     }
 

@@ -50,9 +50,9 @@ public class ProductExpression extends OperatorExpression
 
 
         @Override
-        public Expression parseExpression (Parser userInput)
+        public Expression parseExpression (Parser parser)
         {
-            return new ProductExpression(parseOperands(userInput));
+            return new ProductExpression(parseOperands(parser));
         }
     }
 

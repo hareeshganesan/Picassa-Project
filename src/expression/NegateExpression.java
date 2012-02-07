@@ -37,9 +37,9 @@ public class NegateExpression extends OperatorExpression
 
 
         @Override
-        public Expression parseExpression (Parser userInput)
+        public Expression parseExpression (Parser parser)
         {
-            return new NegateExpression(parseOperands(userInput));
+            return new NegateExpression(parseOperands(parser));
         }
     }
 }

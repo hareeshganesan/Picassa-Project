@@ -37,9 +37,9 @@ public class ArcTanExpression extends OperatorExpression
 
 
         @Override
-        public Expression parseExpression (Parser userInput)
+        public Expression parseExpression (Parser parser)
         {
-            return new ArcTanExpression(parseOperands(userInput));
+            return new ArcTanExpression(parseOperands(parser));
         }
     }
 

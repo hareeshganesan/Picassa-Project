@@ -18,30 +18,30 @@ public abstract class OperatorExpressionFactory extends ExpressionFactory
      * Parses operand components of OperatorExpressions and returns ArrayList of
      * operand expressions
      * 
-     * @param userInput
+     * @param parser
      */
-    protected ArrayList<Expression> parseOperands (Parser userInput)
+    protected ArrayList<Expression> parseOperands (Parser parser)
     {
-        updateParsePosition(userInput);
+        updateParsePosition(parser);
         ArrayList<Expression> operands = new ArrayList<Expression>();
-        while (userInput.currentCharacter() != ')')
+        while (parser.currentCharacter() != ')')
         {
-            operands.add(userInput.parseExpression());
+            operands.add(parser.parseExpression());
         }
-        if (userInput.currentCharacter() != ')') throw new ParserException("Unexpected character at " +
-                                                                                   userInput.currentSubstring(),
+        if (parser.currentCharacter() != ')') throw new ParserException("Unexpected character at " +
+                                                                                   parser.currentSubstring(),
                                                                            ParserException.Type.BAD_SYNTAX);
-        userInput.advancePosition(1);
+        parser.advancePosition(1);
         return operands;
     }
 
 
-    protected void updateParsePosition (Parser userInput)
+    protected void updateParsePosition (Parser parser)
     {
-        Matcher match = EXP_REGEX.matcher(userInput.currentSubstring());
+        Matcher match = EXP_REGEX.matcher(parser.currentSubstring());
         match.find();
-        userInput.advancePosition(match.end() - match.start());
-        userInput.skipWhiteSpace();
+        parser.advancePosition(match.end() - match.start());
+        parser.skipWhiteSpace();
     }
 
 }

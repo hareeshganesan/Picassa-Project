@@ -37,9 +37,9 @@ public class ColorExpression extends OperatorExpression
 
 
         @Override
-        public Expression parseExpression (Parser userInput)
+        public Expression parseExpression (Parser parser)
         {
-            return new ColorExpression(parseOperands(userInput));
+            return new ColorExpression(parseOperands(parser));
         }
     }
 }

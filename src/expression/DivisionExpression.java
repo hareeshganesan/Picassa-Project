@@ -43,9 +43,9 @@ public class DivisionExpression extends OperatorExpression
 
 
         @Override
-        public Expression parseExpression (Parser userInput)
+        public Expression parseExpression (Parser parser)
         {
-            return new DivisionExpression(parseOperands(userInput));
+            return new DivisionExpression(parseOperands(parser));
         }
     }
 

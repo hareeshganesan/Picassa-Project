@@ -53,9 +53,9 @@ public class LetExpression extends OperatorExpression
 
 
         @Override
-        public Expression parseExpression (Parser userInput)
+        public Expression parseExpression (Parser parser)
         {
-            return new LetExpression(parseOperands(userInput));
+            return new LetExpression(parseOperands(parser));
         }
     }
 }

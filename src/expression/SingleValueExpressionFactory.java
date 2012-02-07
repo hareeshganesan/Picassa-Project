@@ -12,11 +12,11 @@ public abstract class SingleValueExpressionFactory extends ExpressionFactory
 
 
     @Override
-    public boolean isInstance (Parser userInput)
+    public boolean isInstance (Parser parser)
     {
-        Matcher varMatcher = EXP_REGEX.matcher(userInput.currentSubstring());
+        Matcher varMatcher = EXP_REGEX.matcher(parser.currentSubstring());
         Matcher parenMatcher =
-            PAREN_REGEX.matcher(userInput.currentSubstring());
+            PAREN_REGEX.matcher(parser.currentSubstring());
         if (varMatcher.lookingAt() || parenMatcher.lookingAt()) return true;
         return false;
     }
@@ -27,20 +27,20 @@ public abstract class SingleValueExpressionFactory extends ExpressionFactory
      * specified position of the input string. Advances parser appropriately in
      * process.
      * 
-     * @param userInput TODO
+     * @param parser TODO
      * @return
      */
-    protected String matchValue (Parser userInput)
+    protected String matchValue (Parser parser)
     {
-        Matcher varMatcher = EXP_REGEX.matcher(userInput.currentSubstring());
+        Matcher varMatcher = EXP_REGEX.matcher(parser.currentSubstring());
         Matcher parenMatcher =
-            PAREN_REGEX.matcher(userInput.currentSubstring());
+            PAREN_REGEX.matcher(parser.currentSubstring());
         varMatcher.find();
         String match =
-            userInput.currentSubstring().substring(varMatcher.start(),
+            parser.currentSubstring().substring(varMatcher.start(),
                                                    varMatcher.end());
-        if (parenMatcher.lookingAt()) userInput.advancePosition(match.length() + 2);
-        else userInput.advancePosition(match.length());
+        if (parenMatcher.lookingAt()) parser.advancePosition(match.length() + 2);
+        else parser.advancePosition(match.length());
 
         return match;
     }

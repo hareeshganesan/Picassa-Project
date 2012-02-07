@@ -37,9 +37,9 @@ public class CeilExpression extends OperatorExpression
 
 
         @Override
-        public Expression parseExpression (Parser userInput)
+        public Expression parseExpression (Parser parser)
         {
-            return new CeilExpression(parseOperands(userInput));
+            return new CeilExpression(parseOperands(parser));
         }
     }
 

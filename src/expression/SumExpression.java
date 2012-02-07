@@ -51,9 +51,9 @@ public class SumExpression extends OperatorExpression
 
 
         @Override
-        public Expression parseExpression (Parser userInput)
+        public Expression parseExpression (Parser parser)
         {
-            return new SumExpression(parseOperands(userInput));
+            return new SumExpression(parseOperands(parser));
         }
     }
 

@@ -43,9 +43,9 @@ public class PowerExpression extends OperatorExpression
 
 
         @Override
-        public Expression parseExpression (Parser userInput)
+        public Expression parseExpression (Parser parser)
         {
-            return new PowerExpression(parseOperands(userInput));
+            return new PowerExpression(parseOperands(parser));
         }
     }
 }

@@ -38,9 +38,9 @@ public class WrapExpression extends OperatorExpression
 
 
         @Override
-        public Expression parseExpression (Parser userInput)
+        public Expression parseExpression (Parser parser)
         {
-            return new WrapExpression(parseOperands(userInput));
+            return new WrapExpression(parseOperands(parser));
         }
     }
 

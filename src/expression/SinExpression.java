@@ -38,9 +38,9 @@ public class SinExpression extends OperatorExpression
 
 
         @Override
-        public Expression parseExpression (Parser userInput)
+        public Expression parseExpression (Parser parser)
         {
-            return new SinExpression(parseOperands(userInput));
+            return new SinExpression(parseOperands(parser));
         }
     }
 

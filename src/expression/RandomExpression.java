@@ -48,9 +48,9 @@ public class RandomExpression extends Expression
 
 
         @Override
-        public Expression parseExpression (Parser userInput)
+        public Expression parseExpression (Parser parser)
         {
-            return new RandomExpression(parseOperands(userInput));
+            return new RandomExpression(parseOperands(parser));
         }
     }
 
