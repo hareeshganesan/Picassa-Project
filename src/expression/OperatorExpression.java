@@ -7,7 +7,7 @@ public abstract class OperatorExpression extends Expression
 {
 
     protected ArrayList<Expression> myOperands;
-    protected String myCommand;
+    private String myCommand;
 
     protected OperatorExpression(ArrayList<Expression> operands, String command){
         myOperands = operands;
