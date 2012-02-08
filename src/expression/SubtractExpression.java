@@ -11,8 +11,7 @@ public class SubtractExpression extends OperatorExpression
 
     private SubtractExpression (ArrayList<Expression> operands)
     {
-        myOperands = operands;
-        myCommand = "minus";
+        super(operands, "minus");
     }
 
 

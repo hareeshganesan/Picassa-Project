@@ -12,8 +12,7 @@ public class TangentExpression extends OperatorExpression
 
     private TangentExpression (ArrayList<Expression> operands)
     {
-        myOperands = operands;
-        myCommand = "tan";
+        super(operands, "tan");
     }
 
 

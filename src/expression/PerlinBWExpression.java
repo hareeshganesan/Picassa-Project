@@ -12,8 +12,7 @@ public class PerlinBWExpression extends OperatorExpression
 
     private PerlinBWExpression (ArrayList<Expression> operands)
     {
-        myOperands = operands;
-        myCommand = "perlinBW";
+        super(operands, "perlinBW");
     }
 
 

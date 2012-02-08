@@ -12,8 +12,7 @@ public class RGBtoLuminanceExpression extends OperatorExpression
 
     private RGBtoLuminanceExpression (ArrayList<Expression> operands)
     {
-        myOperands = operands;
-        myCommand = "rgbToYCrCb";
+        super(operands, "rgbToYCrCb");
     }
 
 

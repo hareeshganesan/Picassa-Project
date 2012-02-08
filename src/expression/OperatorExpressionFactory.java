@@ -8,10 +8,6 @@ import model.Parser;
 
 public abstract class OperatorExpressionFactory extends ExpressionFactory
 {
-    /**
-     * TODO kill command length
-     */
-    protected int commandLength;
 
 
     /**

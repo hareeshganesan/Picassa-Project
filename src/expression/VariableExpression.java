@@ -63,7 +63,7 @@ public class VariableExpression extends Expression
             varRegistry.put("x", new VariableExpression("x", null));
             varRegistry.put("y", new VariableExpression("y", null));
             varRegistry.put("t", new VariableExpression("t", null));
-            EXP_REGEX = Pattern.compile("([a-zA-Z]+(?=(\\s|\\))))");
+            EXP_REGEX = Pattern.compile("([a-zA-Z]+(?=($|\\s|\\))))");
             PAREN_REGEX = Pattern.compile("\\(([a-z]+)\\)");
         }
 

@@ -11,8 +11,8 @@ public class NegateExpression extends OperatorExpression
 
     private NegateExpression (ArrayList<Expression> operands)
     {
-        myOperands = operands;
-        myCommand = "neg";
+        super(operands, "neg");
+
     }
 
 

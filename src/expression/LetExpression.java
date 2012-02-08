@@ -12,8 +12,8 @@ public class LetExpression extends OperatorExpression
 
     private LetExpression (ArrayList<Expression> operands)
     {
-        myOperands = operands;
-        myCommand = "let";
+        super(operands, "let");
+
     }
 
 

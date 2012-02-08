@@ -12,8 +12,8 @@ public class AverageExpression extends OperatorExpression
 
     private AverageExpression (ArrayList<Expression> operands)
     {
-        myOperands = operands;
-        myCommand = "average";
+        super(operands, "average");
+
     }
 
 

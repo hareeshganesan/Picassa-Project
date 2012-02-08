@@ -11,8 +11,8 @@ public class DivisionExpression extends OperatorExpression
 
     private DivisionExpression (ArrayList<Expression> operands)
     {
-        myOperands = operands;
-        myCommand = "div";
+        super(operands, "div");
+
     }
 
 

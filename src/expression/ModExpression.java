@@ -11,8 +11,8 @@ public class ModExpression extends OperatorExpression
 
     private ModExpression (ArrayList<Expression> operands)
     {
-        myOperands = operands;
-        myCommand = "mod";
+        super(operands, "mod");
+
     }
 
 

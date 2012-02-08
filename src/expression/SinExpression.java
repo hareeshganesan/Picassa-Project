@@ -11,8 +11,7 @@ public class SinExpression extends OperatorExpression
 
     private SinExpression (ArrayList<Expression> operands)
     {
-        myOperands = operands;
-        myCommand = "sin";
+        super(operands, "sin");
     }
 
 

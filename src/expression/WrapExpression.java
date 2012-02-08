@@ -11,8 +11,7 @@ public class WrapExpression extends OperatorExpression
 
     private WrapExpression (ArrayList<Expression> operands)
     {
-        myOperands = operands;
-        myCommand = "wrap";
+        super(operands, "wrap");
     }
 
 

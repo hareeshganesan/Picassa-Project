@@ -11,8 +11,8 @@ public class ClampExpression extends OperatorExpression
 
     private ClampExpression (ArrayList<Expression> operands)
     {
-        myOperands = operands;
-        myCommand = "clamp";
+        super(operands, "clamp");
+
     }
 
 

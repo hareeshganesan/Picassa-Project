@@ -12,8 +12,8 @@ public class MaxExpression extends OperatorExpression
 
     private MaxExpression (ArrayList<Expression> operands)
     {
-        myOperands = operands;
-        myCommand = "max";
+        super(operands, "max");
+
     }
 
 

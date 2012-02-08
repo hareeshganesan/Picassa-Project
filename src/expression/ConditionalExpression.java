@@ -11,8 +11,8 @@ public class ConditionalExpression extends OperatorExpression
 
     private ConditionalExpression (ArrayList<Expression> operands)
     {
-        myOperands = operands;
-        myCommand = "if";
+        super(operands, "if");
+
     }
 
 

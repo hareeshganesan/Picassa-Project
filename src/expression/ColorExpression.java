@@ -11,8 +11,8 @@ public class ColorExpression extends OperatorExpression
 
     private ColorExpression (ArrayList<Expression> operands)
     {
-        myOperands = operands;
-        myCommand = "color";
+        super(operands, "color");
+
     }
 
 

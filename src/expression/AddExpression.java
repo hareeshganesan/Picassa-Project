@@ -11,8 +11,7 @@ public class AddExpression extends OperatorExpression
 
     private AddExpression (ArrayList<Expression> operands)
     {
-        myOperands = operands;
-        myCommand = "plus";
+        super(operands, "plus");
     }
 
 

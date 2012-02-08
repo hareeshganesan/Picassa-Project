@@ -12,8 +12,7 @@ public class PerlinColorExpression extends OperatorExpression
 
     private PerlinColorExpression (ArrayList<Expression> operands)
     {
-        myOperands = operands;
-        myCommand = "perlinColor";
+        super(operands, "perlinColor");
     }
 
 

@@ -11,8 +11,8 @@ public class CosExpression extends OperatorExpression
 
     private CosExpression (ArrayList<Expression> operands)
     {
-        myOperands = operands;
-        myCommand = "cos";
+        super(operands, "cos");
+
     }
 
 

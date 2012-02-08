@@ -11,8 +11,8 @@ public class LogExpression extends OperatorExpression
 
     private LogExpression (ArrayList<Expression> operands)
     {
-        myOperands = operands;
-        myCommand = "log";
+        super(operands, "log");
+
     }
 
 

@@ -11,8 +11,8 @@ public class CeilExpression extends OperatorExpression
 
     private CeilExpression (ArrayList<Expression> operands)
     {
-        myOperands = operands;
-        myCommand = "ceil";
+        super(operands, "ceil");
+
     }
 
 

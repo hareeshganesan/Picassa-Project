@@ -12,8 +12,8 @@ public class ProductExpression extends OperatorExpression
 
     private ProductExpression (ArrayList<Expression> operands)
     {
-        myOperands = operands;
-        myCommand = "product";
+        super(operands, "product");
+
     }
 
 

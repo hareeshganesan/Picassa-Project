@@ -12,8 +12,7 @@ public class SumExpression extends OperatorExpression
 
     private SumExpression (ArrayList<Expression> operands)
     {
-        myOperands = operands;
-        myCommand = "sum";
+        super(operands, "sum");
     }
 
 

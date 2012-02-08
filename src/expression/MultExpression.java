@@ -11,8 +11,8 @@ public class MultExpression extends OperatorExpression
 
     private MultExpression (ArrayList<Expression> operands)
     {
-        myOperands = operands;
-        myCommand = "mul";
+        super(operands, "mul");
+
     }
 
 

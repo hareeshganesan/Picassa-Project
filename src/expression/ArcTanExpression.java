@@ -11,8 +11,8 @@ public class ArcTanExpression extends OperatorExpression
 
     private ArcTanExpression (ArrayList<Expression> operands)
     {
-        myOperands = operands;
-        myCommand = "atan";
+        super(operands, "atan");
+
     }
 
 

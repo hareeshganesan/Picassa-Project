@@ -11,8 +11,8 @@ public class PowerExpression extends OperatorExpression
 
     private PowerExpression (ArrayList<Expression> operands)
     {
-        myOperands = operands;
-        myCommand = "exp";
+        super(operands, "exp");
+
     }
 
 

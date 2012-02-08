@@ -9,6 +9,10 @@ public abstract class OperatorExpression extends Expression
     protected ArrayList<Expression> myOperands;
     protected String myCommand;
 
+    protected OperatorExpression(ArrayList<Expression> operands, String command){
+        myOperands = operands;
+        myCommand = command;
+    }
 
     @Override
     public String toString ()

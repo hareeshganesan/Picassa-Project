@@ -11,8 +11,8 @@ public class FloorExpression extends OperatorExpression
 
     private FloorExpression (ArrayList<Expression> operands)
     {
-        myOperands = operands;
-        myCommand = "floor";
+        super(operands, "floor");
+
     }
 
 

@@ -11,8 +11,7 @@ public class AbsoluteValueExpression extends OperatorExpression
 
     private AbsoluteValueExpression (ArrayList<Expression> operands)
     {
-        myOperands = operands;
-        myCommand = "abs";
+        super(operands, "abs");
     }
 
 

@@ -12,8 +12,8 @@ public class MinExpression extends OperatorExpression
 
     private MinExpression (ArrayList<Expression> operands)
     {
-        myOperands = operands;
-        myCommand = "min";
+        super(operands, "min");
+
     }
 
 
